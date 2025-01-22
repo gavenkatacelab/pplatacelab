@@ -33,7 +33,7 @@ on:
         type: string
         required: true      
       PRODUCTION_ENVIRONMENT_URL: 
-        description: ${{varsPROD_URL}}
+        description: ${{vars.PROD_URL}}
         type: string
         required: true
       CLIENT_ID: 
