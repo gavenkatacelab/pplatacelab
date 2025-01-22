@@ -25,7 +25,7 @@ on:
        default: solutions/
 env:
 #edit your values here
-  ENVIRONMENT_URL: ${{ env.DEV1_URL }}
+  ENVIRONMENT_URL: ${{ DEV1_URL }}
   CLIENT_ID: ${{ env.PPLAT_APP_ID }}
   TENANT_ID: ${{ env.TENANT_ID }}
 permissions:
