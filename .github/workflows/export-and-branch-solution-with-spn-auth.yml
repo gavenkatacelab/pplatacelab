@@ -25,9 +25,9 @@ on:
        default: solutions/
 env:
 #edit your values here
-  ENVIRONMENT_URL: ${{ variables.DEV1_URL }}
-  CLIENT_ID: ${{ variables..PPLAT_APP_ID }}
-  TENANT_ID: ${{ variables..TENANT_ID }}
+  ENVIRONMENT_URL: ${{ vars.DEV1_URL }}
+  CLIENT_ID: ${{ vars.PPLAT_APP_ID }}
+  TENANT_ID: ${{ vars.TENANT_ID }}
 permissions:
   contents: write
 jobs:
