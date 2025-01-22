@@ -29,11 +29,11 @@ on:
        type: string
        default: out/release
       BUILD_ENVIRONMENT_URL:
-        description: ${{BUILD_ENV_URL}}
+        description: ${{vars.BUILD_ENV_URL}}
         type: string
         required: true      
       PRODUCTION_ENVIRONMENT_URL: 
-        description: ${{PROD_URL}}
+        description: ${{varsPROD_URL}}
         type: string
         required: true
       CLIENT_ID: 
@@ -115,10 +115,10 @@ jobs:
     - name: Import solution to prod env
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
-        environment-url: ${{env.PROD_URL}}
-        app-id: ${{env.PPLAT_APP_ID}}
+        environment-url: ${{vars.PROD_URL}}
+        app-id: ${{vars.PPLAT_APP_ID}}
         client-secret: ${{ secrets.POWERPLATFORMSPN }}
-        tenant-id: ${{env.TENANT_ID}}
+        tenant-id: ${{vars.TENANT_ID}}
         solution-file: ${{ inputs.solution_release_folder}}/${{ inputs.solution_name }}_managed.zip
         force-overwrite: true
         publish-changes: true
