@@ -72,7 +72,7 @@ jobs:
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
         environment-url: ${{inputs.BUILD_ENVIRONMENT_URL}}
-        app-id: ${{vars.PPLAT_APP_ID}}
+        app-id: ${{inputs.CLIENT_ID}}
         client-secret: ${{ secrets.POWERPLATFORMSPN }}
         tenant-id: ${{vars.TENANT_ID}}
         solution-file: ${{ inputs.solution_outbound_folder}}/${{ inputs.solution_name }}.zip
@@ -115,7 +115,7 @@ jobs:
     - name: Import solution to prod env
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
-        environment-url: ${{vars.PROD_URL}}
+        environment-url: ${{inputs.PROD_URL}}
         app-id: ${{inputs.CLIENT_ID}}
         client-secret: ${{ secrets.POWERPLATFORMSPN }}
         tenant-id: ${{inputs.TENANT_ID}}
