@@ -320,7 +320,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <Format>date</Format>
-          <Behavior>1</Behavior>
+          <Behavior>3</Behavior>
           <displaynames>
             <displayname description="Branch Effective Date" languagecode="1033" />
           </displaynames>
