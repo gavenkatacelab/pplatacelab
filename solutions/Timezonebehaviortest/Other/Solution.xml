@@ -82,6 +82,11 @@
     <RootComponents>
       <RootComponent type="1" schemaName="new_branch" behavior="0" />
     </RootComponents>
-    <MissingDependencies />
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="26" schemaName="All Notes" displayName="All Notes" parentSchemaName="annotation" parentDisplayName="Note" solution="Active" id="{915a0874-db2a-f011-8c4d-6045bd05e182}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Branch" id="{a33703f5-d9d7-49b0-8a83-ad8ade622300}" />
+      </MissingDependency>
+    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>
