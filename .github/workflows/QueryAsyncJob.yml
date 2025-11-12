@@ -19,6 +19,7 @@ jobs:
             -d "client_secret=${{ secrets.envSecret }}" \ 
             -d "grant_type=client_credentials" \
             "https://login.microsoftonline.com/${{ vars.TENANT_ID }}/oauth2/v2.0/token" \
+            | jq -r '.access_token')
 
           echo "token=$TOKEN" >> $GITHUB_OUTPUT
           
