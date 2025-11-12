@@ -10,13 +10,13 @@ jobs:
       - name: Get Azure AD Token
         id: get_token
         run: |
-          TOKEN=$(curl -s -X POST \
-            -H "Content-Type: application/x-www-form-urlencoded" \
-            -d "client_id=${{ vars.PPLAT_APP_ID }}" \
-            -d "scope=${{ vars.PROD_URL }}/.default" \
-            -d "client_secret=${{ secrets.envSecret }}" \
-            -d "grant_type=client_credentials" \
-            "https://login.microsoftonline.com/${{ vars.TENANT_ID }}/oauth2/v2.0/token" \
+          TOKEN=$(curl -s -X POST 
+            -H "Content-Type: application/x-www-form-urlencoded" 
+            -d "client_id=${{ vars.PPLAT_APP_ID }}" 
+            -d "scope=${{ vars.PROD_URL }}/.default" 
+            -d "client_secret=${{ secrets.envSecret }}" 
+            -d "grant_type=client_credentials" 
+            "https://login.microsoftonline.com/${{ vars.TENANT_ID }}/oauth2/v2.0/token" 
             | jq -r '.access_token')
           
           if [ -z "$TOKEN" ] || [ "$TOKEN" == "null" ]; then
