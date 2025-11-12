@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.25101.159" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25101.159" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.25101.00159">
+  <SolutionManifest>
+    <UniqueName>VISAViewissue</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="VISA View issue" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.1</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>mvadventures</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="MV Adventures" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>mv</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>77239</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="mv_ifscase" behavior="2" />
+      <RootComponent type="300" schemaName="mv_troubleshooting_bc88a" behavior="0" />
+      <RootComponent type="80" schemaName="mv_Troubleshooting" behavior="0" />
+      <RootComponent type="9" schemaName="mv_contactpreference" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="competitor" displayName="Competitor" solution="msdynce_Sales (9.0.4.0076)">
+          <package appName="msdynce_Sales" version="9.0.25101.10004">msdynce_SalesAnchor (9.0.25101.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="competitoraddress" displayName="Competitor Address" solution="msdynce_Sales (9.0.4.0076)">
+          <package appName="msdynce_Sales" version="9.0.25101.10004">msdynce_SalesAnchor (9.0.25101.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)">
+          <package appName="msdynce_Service" version="9.0.25095.1001">msdynce_ServiceAnchor (9.0.25095.1001)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="invoice" displayName="Invoice" solution="msdynce_Sales (9.0.4.0076)">
+          <package appName="msdynce_Sales" version="9.0.25101.10004">msdynce_SalesAnchor (9.0.25101.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="invoicedetail" displayName="Invoice Product" solution="msdynce_Sales (9.0.4.0076)">
+          <package appName="msdynce_Sales" version="9.0.25101.10004">msdynce_SalesAnchor (9.0.25101.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)">
+          <package appName="msdynce_LeadManagement" version="9.0.25101.10001">msdynce_LeadManagementAnchor (9.0.25101.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mv_customersite" displayName="Customer Site" solution="Active" />
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mv_ifscase" displayName="IFS Case" solution="Active" />
+        <Dependent type="1" schemaName="mv_ifscase" displayName="IFS Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mv_location" displayName="Location" solution="Active" />
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mv_wing" displayName="Wing" solution="Active" />
+        <Dependent type="300" schemaName="mv_troubleshooting_bc88a" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mv_wing" displayName="Wing" solution="Active" />
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package appName="msdynce_Sales" version="9.0.25101.10004">msdynce_SalesAnchor (9.0.25101.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunityclose" displayName="Opportunity Close" solution="msdynce_Sales (9.0.4.0076)">
+          <package appName="msdynce_Sales" version="9.0.25101.10004">msdynce_SalesAnchor (9.0.25101.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunityproduct" displayName="Opportunity Line" solution="msdynce_Sales (9.0.4.0076)">
+          <package appName="msdynce_Sales" version="9.0.25101.10004">msdynce_SalesAnchor (9.0.25101.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="pricelevel" displayName="Price List" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package appName="msdynce_ProductManagement" version="9.0.25101.10001">msdynce_ProductManagementAnchor (9.0.25101.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package appName="msdynce_ProductManagement" version="9.0.25101.10001">msdynce_ProductManagementAnchor (9.0.25101.10001)</package>
+        </Required>
+        <Dependent type="300" schemaName="mv_troubleshooting_bc88a" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package appName="msdynce_ProductManagement" version="9.0.25101.10001">msdynce_ProductManagementAnchor (9.0.25101.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="productpricelevel" displayName="Price List Item" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package appName="msdynce_ProductManagement" version="9.0.25101.10001">msdynce_ProductManagementAnchor (9.0.25101.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)">
+          <package appName="msdynce_Sales" version="9.0.25101.10004">msdynce_SalesAnchor (9.0.25101.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quotedetail" displayName="Quote Line" solution="msdynce_Sales (9.0.4.0076)">
+          <package appName="msdynce_Sales" version="9.0.25101.10004">msdynce_SalesAnchor (9.0.25101.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="salesorder" displayName="Order" solution="msdynce_Sales (9.0.4.0076)">
+          <package appName="msdynce_Sales" version="9.0.25101.10004">msdynce_SalesAnchor (9.0.25101.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="salesorderdetail" displayName="Order Line" solution="msdynce_Sales (9.0.4.0076)">
+          <package appName="msdynce_Sales" version="9.0.25101.10004">msdynce_SalesAnchor (9.0.25101.10004)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="uom" displayName="Unit" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package appName="msdynce_ProductManagement" version="9.0.25101.10001">msdynce_ProductManagementAnchor (9.0.25101.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="uomschedule" displayName="Unit Group" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package appName="msdynce_ProductManagement" version="9.0.25101.10001">msdynce_ProductManagementAnchor (9.0.25101.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" solution="Active" />
+        <Dependent type="26" schemaName="Inactive IFS Cases" displayName="Inactive IFS Cases" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" id="{330eb67a-8254-43e6-b950-ce4729a20587}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="mv_ifscaseid" displayName="IFS Case" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" solution="Active" />
+        <Dependent type="26" schemaName="Inactive IFS Cases" displayName="Inactive IFS Cases" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" id="{330eb67a-8254-43e6-b950-ce4729a20587}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="mv_name" displayName="Name" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" solution="Active" />
+        <Dependent type="26" schemaName="Inactive IFS Cases" displayName="Inactive IFS Cases" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" id="{330eb67a-8254-43e6-b950-ce4729a20587}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" solution="Active" />
+        <Dependent type="26" schemaName="Inactive IFS Cases" displayName="Inactive IFS Cases" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" id="{330eb67a-8254-43e6-b950-ce4729a20587}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active IFS Cases" displayName="Active IFS Cases" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" solution="Active" id="{8b3677ab-a55b-4012-b048-085a1b0a0a26}" />
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="IFS Case Advanced Find View" displayName="IFS Case Advanced Find View" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" solution="Active" id="{aa9500b4-2914-4b76-b7d9-e8560416db63}" />
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="IFS Case Associated View" displayName="IFS Case Associated View" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" solution="Active" id="{1e98a106-bf64-4c7c-bc6f-57c946c5cb44}" />
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="IFS Case Lookup View" displayName="IFS Case Lookup View" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" solution="Active" id="{0bd88066-8553-4b8f-a531-20a52d6529db}" />
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="IFS Case Subgrid" displayName="IFS Case Subgrid" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" solution="Active" id="{c13a607b-5d65-ed11-9561-00224808127b}" />
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Quick Find Active IFS Cases" displayName="Quick Find Active IFS Cases" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" solution="Active" id="{7785c676-192c-4015-a35b-2e0e222f583a}" />
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="IFS Case per Account" displayName="IFS Case per Account" parentSchemaName="mv_ifscase" parentDisplayName="IFS Case" solution="Active" id="{81fb0666-0a76-ef11-a670-6045bd03f632}" />
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Tier 1 Dashboard" solution="msdynce_Service (9.0.5.56)" id="{d201a642-6283-4f1d-81b7-da4b1685e698}">
+          <package appName="msdynce_Service" version="9.0.25095.1001">msdynce_ServiceAnchor (9.0.25095.1001)</package>
+        </Required>
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="62" schemaName="mv_Troubleshooting" solution="Active" />
+        <Dependent type="80" schemaName="mv_Troubleshooting" displayName="Troubleshooting" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.15)" id.uniquename="AppChannel">
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.23">PowerAppsAppFramework_Anchor (1.0.0.23)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=mv_Troubleshooting,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="mv_Troubleshooting" id.settingdefinitionid.uniquename="AppChannel" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="msdyn_customerservicecopilotenabled" solution="msdyn_CSIntelligence (9.2.25095.1038)" id.uniquename="msdyn_customerservicecopilotenabled">
+          <package appName="ServiceExtended" version="9.0.25095.2012">msdyn_ServiceExtendedAnchor (9.0.25095.2012)</package>
+          <package appName="Service Intelligence Package" version="9.2.25095.1038">msdyn_ServiceIntelligenceAnchor (9.2.25095.1038)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=mv_Troubleshooting,settingdefinitionid.uniquename=msdyn_customerservicecopilotenabled" id.parentappmoduleid.uniquename="mv_Troubleshooting" id.settingdefinitionid.uniquename="msdyn_customerservicecopilotenabled" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="msdyn_enablertecopilot" solution="msdyn_SalesCopilot (9.1.25101.10003)" id.uniquename="msdyn_enablertecopilot">
+          <package appName="msdynce_Sales" version="9.0.25101.10004">msdynce_SalesAnchor (9.0.25101.10004)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=mv_Troubleshooting,settingdefinitionid.uniquename=msdyn_enablertecopilot" id.parentappmoduleid.uniquename="mv_Troubleshooting" id.settingdefinitionid.uniquename="msdyn_enablertecopilot" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="msdyn_IsTeamsDynamicsIntegrationEnabled" solution="msdynce_OfficeProductivity (9.0.25101.10002)" id.uniquename="msdyn_IsTeamsDynamicsIntegrationEnabled">
+          <package appName="msdynce_OfficeProductivity" version="9.0.25101.10002">msdynce_OfficeProductivityAnchor (9.0.25101.10002)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=mv_Troubleshooting,settingdefinitionid.uniquename=msdyn_IsTeamsDynamicsIntegrationEnabled" id.parentappmoduleid.uniquename="mv_Troubleshooting" id.settingdefinitionid.uniquename="msdyn_IsTeamsDynamicsIntegrationEnabled" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="msdyn_rtecopilotdefaultonruncompleted" solution="msdyn_CSIntelligence (9.2.25095.1038)" id.uniquename="msdyn_rtecopilotdefaultonruncompleted">
+          <package appName="ServiceExtended" version="9.0.25095.2012">msdyn_ServiceExtendedAnchor (9.0.25095.2012)</package>
+          <package appName="Service Intelligence Package" version="9.2.25095.1038">msdyn_ServiceIntelligenceAnchor (9.2.25095.1038)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=mv_Troubleshooting,settingdefinitionid.uniquename=msdyn_rtecopilotdefaultonruncompleted" id.parentappmoduleid.uniquename="mv_Troubleshooting" id.settingdefinitionid.uniquename="msdyn_rtecopilotdefaultonruncompleted" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>
