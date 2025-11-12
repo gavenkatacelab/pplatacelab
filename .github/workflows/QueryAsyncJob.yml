@@ -12,14 +12,17 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y jq curl
           
-          TOKEN=$(curl -s -X POST \
+          RESPONSE=$(curl -s -X POST \
             -H "Content-Type: application/x-www-form-urlencoded" \
             -d "client_id=${{ vars.PPLAT_APP_ID }}" \
             -d "scope=${{ vars.PROD_URL }}/.default" \
             -d "client_secret=${{ secrets.envSecret }}" \ 
             -d "grant_type=client_credentials" \
-            "https://login.microsoftonline.com/${{ vars.TENANT_ID }}/oauth2/v2.0/token" \
-            | jq -r '.access_token')
+            "https://login.microsoftonline.com/${{ vars.TENANT_ID }}/oauth2/v2.0/token")
+
+          echo "Response=$RESPONSE" 
+
+          TOKEN=$(echo "$RESPONSE" | jq -r '.access_token')
 
           echo "token=$TOKEN" >> $GITHUB_OUTPUT
           
