@@ -21,7 +21,7 @@ jobs:
             "https://login.microsoftonline.com/${{ vars.TENANT_ID }}/oauth2/v2.0/token" \
             | jq -r '.access_token')
 
-          echo "token=$TOKEN" >> $GITHUB_OUTPUT
+          echo " The token is $TOKEN" >> $GITHUB_OUTPUT
           
           if [ -z "$TOKEN" ] || [ "$TOKEN" == "null" ]; then
             echo "Failed to get token"
